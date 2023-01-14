@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://github.com/AlyaaXd/Elaina-Bot*`
+let str = `*https://github.com/AlyaaXd*`
     let waifu = await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/waifu.txt')
     let chen = await waifu.text()
     let ran = chen.split('\n')
